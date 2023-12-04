@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NF Stock PL | Home</title>
+    <title>NF Stock | Home</title>
     <style>
         body {
-            background-color: #000;
+            background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fusagif.com%2Fpl%2Fgify-z-platkami-sniegu%2F&psig=AOvVaw0s2E2JVWAY3HtN8M42jAwj&ust=1701799252657000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLjo56uu9oIDFQAAAAAdAAAAABAI') no-repeat center center fixed;
+            background-size: cover;
             color: #fff;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -68,6 +69,30 @@
                 opacity: 1;
             }
         }
+
+        #bottom-section {
+            background-color: #333;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #bottom-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #bottom-section ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        #bottom-section li {
+            font-size: 18px;
+            margin: 0 20px;
+        }
     </style>
 </head>
 <body>
@@ -75,22 +100,25 @@
         <h1>NF Stock</h1>
         <div id="buttons-container">
             <a href="https://link-do-discorda" class="button" target="_blank">Discord</a>
-            <a href="https://t.me/NFstockPL" class="button" target="_blank">Telegram</a>
+            <a href="https://link-do-telegrama" class="button" target="_blank">Telegram</a>
         </div>
     </header>
 
     <section id="welcome-section">
         <div id="welcome-message">
             <h2>Witamy na naszej stronie</h2>
-            <p>Oferujemy:
-            
-            Tanie Nitro, 
-            Tanie boosty na serwer, 
-            Tanie konta streamingowe
-            I wiele więcej! 
-            
-            Dołącz na naszego telegrama już teraz! </p>
+            <p>Zachęcamy do przeglądania ofert</p>
         </div>
+    </section>
+
+    <section id="bottom-section">
+        <h2>Witaj na naszej stronie</h2>
+        <ul>
+            <li>Tanie Nitro</li>
+            <li>Tanie boosty na serwer</li>
+            <li>Tanie konta streamingowe</li>
+            <li>I wiele więcej!</li>
+        </ul>
     </section>
 
     <script>
@@ -103,9 +131,5 @@
             }
         });
     </script>
-    </nav>
-                <p class="mt-8 text-[10px] leading-6 text-center text-gray-600 uppercase">VanityMarket - 2023
-        </p>
-            </div>
 </body>
 </html>
