@@ -6,7 +6,7 @@
     <title>NF STOCK | HOME</title>
     <style>
         body {
-            background-color: #000;
+            background: #000; /* Zmiana koloru tła na czarny */
             color: #fff;
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -21,108 +21,44 @@
         #buttons-container {
             display: flex;
             justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
 
         .button {
             margin: 0 10px;
-            padding: 10px 20px;
+            padding: 20px;
             font-size: 16px;
             text-align: center;
             text-decoration: none;
             color: #fff;
-            background-color: #3498db;
-            border: 2px solid #2980b9;
-            border-radius: 5px;
+            background-color: transparent;
+            border: 2px solid #fff;
+            border-radius: 50%;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .button:hover {
-            background-color: #2980b9;
-            transform: scale(1.1);
-        }
-
-        #welcome-section {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        #welcome-message {
-            display: none;
-            animation: fade-in 2s ease;
-        }
-
-        @keyframes fade-in {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        #bottom-section {
-            background-color: rgba(51, 51, 51, 0.7); /* Zmieniono wartość przezroczystości koloru na 0.7 (70%) */
-            padding: 50px 0;
-            text-align: center;
-        }
-
-        #bottom-section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-
-        #bottom-section ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-
-        #bottom-section li {
-            font-size: 18px;
-            margin: 0 20px;
+            background-color: rgba(255, 255, 255, 0.1);
         }
     </style>
 </head>
 <body>
     <header>
         <h1>NF STOCK</h1>
-        <div id="buttons-container">
-            <a href="https://discord.com" class="button" target="_blank">DISCORD (SOON)</a>
-            <a href="https://t.me/NFstockPL" class="button" target="_blank">Telegram</a>
-        </div>
     </header>
 
-    <section id="welcome-section">
-        <div id="welcome-message">
-            <h2>Witamy na naszej stronie</h2>
-            <p>Nasze oferty znajdziesz poniżej</p>
-        </div>
-    </section>
-
-    <section id="bottom-section">
-        <h2>Produkty, które możesz u nas zobaczyć:</h2>
-        <ul>
-            <li>Tanie Nitro</li>
-            <li>Tanie boosty na serwer</li>
-            <li>Tanie konta streamingowe</li>
-            <li>I wiele więcej!</li>
-        </ul>
+    <section id="buttons-container">
+        <a href="#" class="button" target="_blank">😊</a>
+        <a href="#" class="button" target="_blank">❤️</a>
     </section>
 
     <script>
         window.addEventListener('scroll', function() {
-            var welcomeMessage = document.getElementById('welcome-message');
             var scrollPosition = window.scrollY + window.innerHeight;
 
-            if (scrollPosition > welcomeMessage.offsetTop) {
-                welcomeMessage.style.display = 'block';
-            }
+            // Możesz dodać dodatkową logikę, jeśli potrzebujesz
         });
     </script>
 </body>
