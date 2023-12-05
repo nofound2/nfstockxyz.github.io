@@ -36,7 +36,13 @@
             border: 2px solid #fff;
             border-radius: 50%;
             cursor: pointer;
+            overflow: hidden; /* Zapobiega wypadaniu obrazków poza przycisk */
             transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .button img {
+            width: 100%; /* Obrazki zajmują 100% szerokości przycisku */
+            height: auto; /* Utrzymuje proporcje obrazków */
         }
 
         .button:hover {
